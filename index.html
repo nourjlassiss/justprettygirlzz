@@ -1,10 +1,86 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Admitad Site</title>
-  </head>
-  <body>
-    <h1>Welcome to my site!</h1>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just Pretty Girlzz</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+      min-height: 100vh;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    header {
+      background: rgba(255,255,255,0.85);
+      width: 100%;
+      padding: 2rem 0 1rem 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #bb60d5;
+      letter-spacing: 2px;
+    }
+    .content {
+      background: rgba(255,255,255,0.9);
+      border-radius: 1rem;
+      box-shadow: 0 4px 24px rgba(186, 104, 200, 0.1);
+      padding: 2rem 2.5rem;
+      max-width: 450px;
+      width: 90%;
+      text-align: center;
+    }
+    .links {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .affiliate-link {
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(90deg, #bb60d5 0%, #5496cf 100%);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .affiliate-link:hover {
+      background: linear-gradient(90deg, #5496cf 0%, #bb60d5 100%);
+      box-shadow: 0 2px 8px rgba(186, 104, 200, 0.2);
+    }
+    @media (max-width: 600px) {
+      .content {
+        padding: 1.2rem 0.7rem;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Just Pretty Girlzz</h1>
+  </header>
+  <div class="content">
+    <p>Welcome to my pretty affiliate site! 🌸</p>
+    <div class="links">
+      <!-- Example affiliate links; you can add more below -->
+      <a href="https://example.com/your-affiliate-link1" target="_blank" class="affiliate-link">Shop Fashion Deals</a>
+      <a href="https://example.com/your-affiliate-link2" target="_blank" class="affiliate-link">Beauty Essentials</a>
+    </div>
+    <!-- Add more content or links here as you need -->
+  </div>
+</body>
 </html>
