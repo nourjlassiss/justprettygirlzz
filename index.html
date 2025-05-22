@@ -4,94 +4,280 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Just Pretty Girlzz</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --main-bg: #f9e7ed;
+      --accent-bg: #e2ecdf;
+      --container-bg: #fff8f0;
+      --card-bg: #f5f7fa;
+      --primary: #7d8c5f;
+      --secondary: #eaa37a;
+      --cta: #4b5e3b;
+      --shadow: 0 4px 24px rgba(60, 44, 13, 0.09);
+      --border-radius: 24px;
+      --font-main: 'Montserrat', Arial, sans-serif;
+    }
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      /* Calm pastel gradient background */
-      background: linear-gradient(135deg, #f7e8ff 0%, #e3f6fd 100%);
+      background: var(--main-bg);
+      font-family: var(--font-main);
+      color: #3d3322;
       min-height: 100vh;
-      color: #393939;
+    }
+    .wrapper {
+      max-width: 1050px;
+      margin: 36px auto 36px auto;
+      background: var(--container-bg);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      padding: 0 0 40px 0;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 26px 48px 8px 48px;
+      border-bottom: 2px solid #f0e5dc;
+    }
+    .nav-links {
+      display: flex;
+      gap: 34px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #5d5d5d;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+    .logo {
+      font-family: var(--font-main);
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: var(--primary);
+      letter-spacing: 2px;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      padding: 48px 48px 32px 48px;
+      background: var(--accent-bg);
+      border-radius: var(--border-radius);
+      margin: 32px 36px 24px 36px;
+      box-shadow: 0 2px 10px rgba(60,44,13,0.07);
+    }
+    .hero-text {
+      flex: 2;
+    }
+    .hero-title {
+      font-size: 2.6rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--cta);
+      letter-spacing: 1px;
+    }
+    .hero-desc {
+      font-size: 1.09rem;
+      margin-bottom: 24px;
+      color: #4c3c2b;
+    }
+    .hero-btn {
+      padding: 16px 32px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      background: var(--cta);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.18s;
+      box-shadow: 0 2px 10px rgba(60,44,13,0.07);
+      text-decoration: none;
+      display: inline-block;
+    }
+    .hero-btn:hover {
+      background: var(--primary);
+    }
+    .hero-img {
+      flex: 1.1;
+      max-width: 210px;
+      border-radius: 18px;
+      box-shadow: 0 4px 18px rgba(100, 100, 100, 0.09);
+      background: #fcf6f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+    .hero-img img {
+      width: 100%;
+      border-radius: 16px;
+      object-fit: cover;
+    }
+    .tags-list {
+      margin: 0 44px 24px 44px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+    .tag {
+      padding: 4px 18px;
+      background: #f1ebe0;
+      border-radius: 18px;
+      box-shadow: 0 1px 5px rgba(60,44,13,0.05);
+      cursor: pointer;
+      transition: background 0.17s;
+    }
+    .tag:hover {
+      background: #e6e0d0;
+    }
+    .cards-section {
+      margin: 0 36px;
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .product-card {
+      background: var(--card-bg);
+      border-radius: 18px;
+      box-shadow: 0 2px 11px rgba(60,44,13,0.07);
+      padding: 22px 22px 28px 22px;
+      width: 270px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
+      margin-bottom: 24px;
+      transition: box-shadow 0.16s;
     }
-    header {
-      background: rgba(250, 245, 255, 0.97);
-      width: 100%;
-      padding: 2rem 0 1rem 0;
-      box-shadow: 0 2px 8px rgba(189, 150, 255, 0.04);
-      text-align: center;
-      margin-bottom: 2rem;
+    .product-card:hover {
+      box-shadow: 0 6px 20px rgba(60,44,13,0.10);
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: #b283d7;
-      letter-spacing: 2px;
-      font-weight: bold;
-    }
-    .content {
-      background: rgba(255,255,255,0.98);
-      border-radius: 1.5rem;
-      box-shadow: 0 4px 24px rgba(189, 150, 255, 0.10);
-      padding: 2rem 2.5rem;
-      max-width: 450px;
-      width: 90%;
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .content p {
-      font-size: 1.2rem;
-      margin: 0 0 2rem 0;
-      color: #503c43;
-    }
-    .links {
-      margin-top: 0.5rem;
+    .product-img {
+      width: 140px;
+      height: 180px;
+      background: #e9e2d3;
+      border-radius: 12px;
+      margin-bottom: 15px;
       display: flex;
-      flex-direction: column;
-      gap: 1.1rem;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
     }
-    .affiliate-link {
-      text-decoration: none;
-      color: #fff;
-      background: linear-gradient(90deg, #bca7e8 0%, #a2d6f9 100%);
-      padding: 1rem;
-      border-radius: 0.8rem;
-      font-weight: 600;
-      font-size: 1.1rem;
-      box-shadow: 0 2px 6px rgba(162, 214, 249, 0.12);
-      transition: background 0.2s, box-shadow 0.2s;
+    .product-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .product-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 7px;
+      color: var(--primary);
+      text-align: center;
       letter-spacing: 1px;
     }
-    .affiliate-link:hover {
-      background: linear-gradient(90deg, #a2d6f9 0%, #bca7e8 100%);
-      box-shadow: 0 4px 14px rgba(162, 214, 249, 0.18);
+    .product-desc {
+      font-size: 1rem;
+      color: #61594c;
+      margin-bottom: 18px;
+      text-align: center;
+      min-height: 48px;
     }
-    @media (max-width: 600px) {
-      .content {
-        padding: 1.2rem 0.7rem;
-      }
-      header h1 {
-        font-size: 2rem;
-      }
+    .product-link {
+      background: var(--secondary);
+      color: #fff;
+      font-weight: 600;
+      font-size: 1rem;
+      border: none;
+      border-radius: 7px;
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: background 0.18s;
+      cursor: pointer;
+      margin-top: auto;
+      box-shadow: 0 1px 6px rgba(234,163,122,0.12);
+      display: inline-block;
+    }
+    .product-link:hover {
+      background: #d6895b;
+    }
+
+    @media (max-width: 900px) {
+      .wrapper { max-width: 98vw; }
+      .hero { flex-direction: column; padding: 32px 20px 20px 20px; margin: 24px 6vw 20px 6vw; }
+      .hero-img { max-width: 90vw; }
+      .cards-section { margin: 0 8px; }
+      nav { padding: 16px 10px 8px 10px; }
+      .tags-list { margin: 0 10px 24px 10px; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Just Pretty Girlzz</h1>
-  </header>
-  <div class="content">
-    <p>all the essentials you need for a pretty lifestyle </p>
-    <div class="links">
-      <!-- Example links; add more below as you need -->
-      <a href="https://example.com/your-affiliate-link1" target="_blank" class="affiliate-link">Shop Fashion Deals</a>
-      <a href="https://example.com/your-affiliate-link2" target="_blank" class="affiliate-link">Beauty Essentials</a>
+  <div class="wrapper">
+    <nav>
+      <div class="logo">Just Pretty Girlzz</div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="hero-text">
+        <div class="hero-title">Explore Unique Finds</div>
+        <div class="hero-desc">Curated picks and pretty things for every vibe. Discover handpicked deals, beauty, and lifestyle essentials that brighten your day.</div>
+        <a href="#" class="hero-btn">See All Products</a>
+      </div>
+      <div class="hero-img">
+        <!-- Replace the src with your own image or keep as placeholder -->
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Pretty Products">
+      </div>
+    </section>
+    <div class="tags-list">
+      <div class="tag">Trending</div>
+      <div class="tag">Beauty</div>
+      <div class="tag">Style</div>
+      <div class="tag">Self-Care</div>
+      <div class="tag">Gifts</div>
+      <div class="tag">Deals</div>
     </div>
-    <!-- Add more content or links here as you need -->
+    <section class="cards-section">
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" alt="Fashion">
+        </div>
+        <div class="product-title">Chic Cosiness</div>
+        <div class="product-desc">Stay comfy and cute with our top picks for cozy style.</div>
+        <a href="https://example.com/link1" target="_blank" class="product-link">Shop Now</a>
+      </div>
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Beauty">
+        </div>
+        <div class="product-title">Glow Kit</div>
+        <div class="product-desc">Discover beauty essentials for a radiant everyday look.</div>
+        <a href="https://example.com/link2" target="_blank" class="product-link">Shop Now</a>
+      </div>
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Lifestyle">
+        </div>
+        <div class="product-title">Passion Picks</div>
+        <div class="product-desc">Unique finds that add joy and inspiration to your routine.</div>
+        <a href="https://example.com/link3" target="_blank" class="product-link">Shop Now</a>
+      </div>
+    </section>
   </div>
 </body>
 </html>
