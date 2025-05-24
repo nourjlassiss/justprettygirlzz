@@ -213,74 +213,6 @@
     .product-link:hover {
       background: #d6895b;
     }
-    /* Ownership Verification Section Styles */
-    .verification-section {
-      margin: 48px 36px 0 36px;
-      padding: 36px 24px;
-      border-radius: 24px;
-      background: #f7f7f7;
-      box-shadow: 0 2px 10px rgba(60,44,13,0.07);
-    }
-    .verification-section h2 {
-      font-size: 2rem;
-      color: #4b5e3b;
-      margin-bottom: 14px;
-      font-weight: bold;
-      letter-spacing: 0.5px;
-    }
-    .verification-cards {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
-      margin-top: 26px;
-    }
-    .verification-card {
-      flex: 1;
-      min-width: 300px;
-      padding: 1.5rem;
-      border-radius: 12px;
-      background: #fff;
-      box-shadow: 0 1px 6px rgba(60,44,13,0.04);
-      display: flex;
-      flex-direction: column;
-    }
-    .verification-card h3 {
-      margin-top: 0;
-      margin-bottom: 10px;
-      color: #7d8c5f;
-      font-size: 1.15rem;
-      font-weight: bold;
-    }
-    .verification-card pre {
-      background: #eee;
-      padding: 0.5rem;
-      border-radius: 6px;
-      margin-top: 1em;
-      font-size: 0.98em;
-      overflow-x: auto;
-    }
-    .verification-card a {
-      color: #4e8af0;
-      font-size: 0.99rem;
-      margin-bottom: 0.9em;
-      text-decoration: underline;
-      width: fit-content;
-    }
-    .verification-card button {
-      background: #77c35a;
-      color: #fff;
-      font-weight: bold;
-      padding: 0.75em 2em;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-top: 2em;
-      font-size: 1.05rem;
-      transition: background 0.18s;
-    }
-    .verification-card button:hover {
-      background: #4b5e3b;
-    }
     @media (max-width: 900px) {
       .wrapper { max-width: 98vw; }
       .hero { flex-direction: column; padding: 32px 20px 20px 20px; margin: 24px 6vw 20px 6vw; }
@@ -288,8 +220,6 @@
       .cards-section { margin: 0 8px; }
       nav { padding: 16px 10px 8px 10px; }
       .tags-list { margin: 0 10px 24px 10px; }
-      .verification-section { margin: 36px 8px 0 8px; padding: 28px 8px; }
-      .verification-cards { flex-direction: column; gap: 1.5rem; }
     }
   </style>
 </head>
@@ -349,49 +279,6 @@
         <a href="deals.html" class="product-link">Shop Now</a>
       </div>
     </section>
-    <!-- Ownership Verification Section Start -->
-    <section class="verification-section">
-      <h2>Please confirm your ownership of "just pretty girls"</h2>
-      <p>
-        You need to do this so you can connect the ad space to programs and generate affiliate links.<br>
-        Please select one of the methods below.
-      </p>
-      <div class="verification-cards">
-        <!-- Meta Tag Deployment -->
-        <div class="verification-card">
-          <h3>Meta tag deployment</h3>
-          <p>
-            Copy the meta tag and place it between the tags <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> of your website's home page.
-          </p>
-          <a href="#">Guide</a>
-          <pre><code>&lt;meta name="verify-admitad" content="732a7cdbcf" /&gt;</code></pre>
-          <p style="margin-top:1em;">Can't place the tag into <code>&lt;head&gt;</code>?</p>
-        </div>
-        <!-- DNS Entry -->
-        <div class="verification-card">
-          <h3>Adding a DNS entry</h3>
-          <p>
-            Copy the TXT entry and add it to DNS entries of your website's domain.
-          </p>
-          <a href="#">Guide</a>
-          <pre><code>admitad-verification: 732a7cdbcf</code></pre>
-        </div>
-        <!-- File Upload -->
-        <div class="verification-card" style="align-items:center;">
-          <h3>Uploading the file to the root directory</h3>
-          <p>
-            Download the file and upload it to your website's root directory.
-          </p>
-          <a href="#">Guide</a>
-          <button>Download file</button>
-        </div>
-      </div>
-      <!-- You can replace the image src below with your actual verification screenshot if you like -->
-      <div style="margin-top:2em;text-align:right;">
-        <img src="your-screenshot.png" alt="Verification instructions" style="max-width:350px;border-radius:10px;">
-      </div>
-    </section>
-    <!-- Ownership Verification Section End -->
   </div>
 </body>
 </html>
