@@ -11,19 +11,24 @@
 <body>
   <div class="outer-bg">
     <div class="card-grid">
-      <!-- Card 1 -->
+      <!-- Card 1: Beauty -->
       <div class="card-row pink-row">
         <div class="card card-left">
-          <h1 class="card-title">КСЕБЕ<br><span class="script">КНЕЖНО</span></h1>
-          <img class="card-img" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=300&q=80" alt="Product 1">
-          <p class="card-desc">Ваши ежедневные must-have средства для ухода за собой и настроения.</p>
-          <button class="card-btn">КУПИТЬ</button>
+          <h1 class="card-title">Beauty<br><span class="script">Essentials</span></h1>
+          <p class="card-desc">Your daily must-haves for a flawless look and glowing confidence.</p>
+          <div class="card-links">
+            <label for="beauty-link1">Add your favorite beauty link:</label>
+            <input type="url" id="beauty-link1" placeholder="https://..." onchange="setLink('beauty-link-output1', this.value)">
+            <div id="beauty-link-output1"></div>
+            <label for="beauty-link2">Another beauty favorite:</label>
+            <input type="url" id="beauty-link2" placeholder="https://..." onchange="setLink('beauty-link-output2', this.value)">
+            <div id="beauty-link-output2"></div>
+          </div>
+          <button class="card-btn">Shop Beauty</button>
         </div>
         <div class="card card-right pink">
           <svg class="bag-svg" viewBox="0 0 110 120">
-            <!-- Bag outline -->
             <rect x="15" y="25" width="80" height="70" rx="8" fill="none" stroke="#fff" stroke-width="2"/>
-            <!-- Handles -->
             <path d="M28 25 Q55 3 82 25" fill="none" stroke="#fff" stroke-width="2"/>
             <!-- Essentials (abstract) -->
             <rect x="25" y="60" width="10" height="25" rx="2" fill="#fff" opacity="0.7"/>
@@ -33,26 +38,31 @@
             <circle cx="80" cy="95" r="5" fill="#fff" opacity="0.7"/>
           </svg>
           <ul class="essentials-list">
-            <li>Лип-глосс</li>
-            <li>Парфюм мини</li>
-            <li>Крем для рук</li>
-            <li>Антибактериальный гель</li>
+            <li>Lip gloss</li>
+            <li>Mini perfume</li>
+            <li>Hand cream</li>
+            <li>Face mist</li>
           </ul>
         </div>
       </div>
-      <!-- Card 2 -->
+      <!-- Card 2: Health -->
       <div class="card-row green-row">
         <div class="card card-left">
-          <h1 class="card-title">КСЕБЕ<br><span class="script">КНЕЖНО</span></h1>
-          <img class="card-img" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=300&q=80" alt="Product 2">
-          <p class="card-desc">Лёгкая забота для любого настроения и каждого дня.</p>
-          <button class="card-btn">КУПИТЬ</button>
+          <h1 class="card-title">Health<br><span class="script">Essentials</span></h1>
+          <p class="card-desc">Gentle care for your daily wellness and peace of mind.</p>
+          <div class="card-links">
+            <label for="health-link1">Add your favorite health link:</label>
+            <input type="url" id="health-link1" placeholder="https://..." onchange="setLink('health-link-output1', this.value)">
+            <div id="health-link-output1"></div>
+            <label for="health-link2">Another health favorite:</label>
+            <input type="url" id="health-link2" placeholder="https://..." onchange="setLink('health-link-output2', this.value)">
+            <div id="health-link-output2"></div>
+          </div>
+          <button class="card-btn">Shop Health</button>
         </div>
         <div class="card card-right green">
           <svg class="bag-svg" viewBox="0 0 110 120">
-            <!-- Bag outline -->
             <rect x="15" y="25" width="80" height="70" rx="8" fill="none" stroke="#fff" stroke-width="2"/>
-            <!-- Handles -->
             <path d="M28 25 Q55 3 82 25" fill="none" stroke="#fff" stroke-width="2"/>
             <!-- Essentials (abstract) -->
             <rect x="25" y="60" width="10" height="25" rx="2" fill="#fff" opacity="0.7"/>
@@ -62,26 +72,31 @@
             <circle cx="80" cy="95" r="5" fill="#fff" opacity="0.7"/>
           </svg>
           <ul class="essentials-list">
-            <li>Салфетки</li>
-            <li>Мини-зеркало</li>
-            <li>Блеск для губ</li>
-            <li>Крем для рук</li>
+            <li>Wet wipes</li>
+            <li>Hand sanitizer</li>
+            <li>Water bottle</li>
+            <li>Vitamin gummies</li>
           </ul>
         </div>
       </div>
-      <!-- Card 3 -->
+      <!-- Card 3: Outfits -->
       <div class="card-row pink-row">
         <div class="card card-left">
-          <h1 class="card-title">КСЕБЕ<br><span class="script">КНЕЖНО</span></h1>
-          <img class="card-img" src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=300&q=80" alt="Product 3">
-          <p class="card-desc">Это не просто набор. Это — твой стиль жизни и забота о себе.</p>
-          <button class="card-btn">ЗАКАЗАТЬ</button>
+          <h1 class="card-title">Outfits<br><span class="script">Essentials</span></h1>
+          <p class="card-desc">Your style, your way—comfort and chic for every day.</p>
+          <div class="card-links">
+            <label for="outfit-link1">Add your favorite outfit link:</label>
+            <input type="url" id="outfit-link1" placeholder="https://..." onchange="setLink('outfit-link-output1', this.value)">
+            <div id="outfit-link-output1"></div>
+            <label for="outfit-link2">Another outfit favorite:</label>
+            <input type="url" id="outfit-link2" placeholder="https://..." onchange="setLink('outfit-link-output2', this.value)">
+            <div id="outfit-link-output2"></div>
+          </div>
+          <button class="card-btn">Shop Outfits</button>
         </div>
         <div class="card card-right pink">
           <svg class="bag-svg" viewBox="0 0 110 120">
-            <!-- Bag outline -->
             <rect x="15" y="25" width="80" height="70" rx="8" fill="none" stroke="#fff" stroke-width="2"/>
-            <!-- Handles -->
             <path d="M28 25 Q55 3 82 25" fill="none" stroke="#fff" stroke-width="2"/>
             <!-- Essentials (abstract) -->
             <rect x="25" y="60" width="10" height="25" rx="2" fill="#fff" opacity="0.7"/>
@@ -91,14 +106,24 @@
             <circle cx="80" cy="95" r="5" fill="#fff" opacity="0.7"/>
           </svg>
           <ul class="essentials-list">
-            <li>Зеркало</li>
-            <li>Косметичка</li>
-            <li>Мини-парфюм</li>
-            <li>Резинка для волос</li>
+            <li>Scrunchie</li>
+            <li>Sunglasses</li>
+            <li>Mini bag</li>
+            <li>Statement earrings</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
+  <script>
+    function setLink(outputId, value) {
+      const output = document.getElementById(outputId);
+      if (value && value.startsWith('http')) {
+        output.innerHTML = `<a href="${value}" target="_blank" rel="noopener">${value}</a>`;
+      } else {
+        output.innerHTML = '';
+      }
+    }
+  </script>
 </body>
 </html>
