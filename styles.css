@@ -80,21 +80,43 @@ body {
   letter-spacing: 2px;
 }
 
-.card-img {
-  width: 80px;
-  height: 80px;
-  border-radius: 8px;
-  object-fit: cover;
-  margin-bottom: 12px;
-  margin-top: 2px;
-  box-shadow: 0 2px 8px #0002;
-}
-
 .card-desc {
   font-size: 0.97rem;
   color: #7b4254;
   margin-bottom: 12px;
   margin-top: 0;
+}
+
+.card-links {
+  width: 100%;
+  margin-bottom: 14px;
+}
+.card-links label {
+  font-size: 0.93rem;
+  margin-top: 8px;
+  color: #7b4254;
+  display: block;
+}
+.card-links input[type="url"] {
+  width: 100%;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #ad5b6e;
+  margin-bottom: 4px;
+  font-size: 0.96rem;
+  margin-top: 2px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #fff;
+  box-sizing: border-box;
+}
+.card-links a {
+  color: #ad5b6e;
+  font-size: 0.98rem;
+  word-break: break-all;
+  text-decoration: underline;
+  margin-bottom: 6px;
+  display: block;
+  margin-top: 2px;
 }
 
 .card-btn {
