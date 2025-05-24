@@ -2,284 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="verify-admitad" content="732a7cdbcf" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Just Pretty Girlzz</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --main-bg: #f9e7ed;
-      --accent-bg: #e2ecdf;
-      --container-bg: #fff8f0;
-      --card-bg: #f5f7fa;
-      --primary: #7d8c5f;
-      --secondary: #eaa37a;
-      --cta: #4b5e3b;
-      --shadow: 0 4px 24px rgba(60, 44, 13, 0.09);
-      --border-radius: 24px;
-      --font-main: 'Montserrat', Arial, sans-serif;
-    }
-    body {
-      margin: 0;
-      background: var(--main-bg);
-      font-family: var(--font-main);
-      color: #3d3322;
-      min-height: 100vh;
-    }
-    .wrapper {
-      max-width: 1050px;
-      margin: 36px auto 36px auto;
-      background: var(--container-bg);
-      border-radius: var(--border-radius);
-      box-shadow: var(--shadow);
-      padding: 0 0 40px 0;
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 26px 48px 8px 48px;
-      border-bottom: 2px solid #f0e5dc;
-    }
-    .nav-links {
-      display: flex;
-      gap: 34px;
-    }
-    .nav-links a {
-      text-decoration: none;
-      color: #5d5d5d;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: color 0.2s;
-    }
-    .nav-links a:hover {
-      color: var(--primary);
-    }
-    .logo {
-      font-family: var(--font-main);
-      font-weight: 700;
-      font-size: 1.6rem;
-      color: var(--primary);
-      letter-spacing: 2px;
-    }
-    .hero {
-      display: flex;
-      align-items: center;
-      gap: 36px;
-      padding: 48px 48px 32px 48px;
-      background: var(--accent-bg);
-      border-radius: var(--border-radius);
-      margin: 32px 36px 24px 36px;
-      box-shadow: 0 2px 10px rgba(60,44,13,0.07);
-    }
-    .hero-text {
-      flex: 2;
-    }
-    .hero-title {
-      font-size: 2.6rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-      color: var(--cta);
-      letter-spacing: 1px;
-    }
-    .hero-desc {
-      font-size: 1.09rem;
-      margin-bottom: 24px;
-      color: #4c3c2b;
-    }
-    .hero-btn {
-      padding: 16px 32px;
-      font-size: 1.1rem;
-      font-weight: 700;
-      background: var(--cta);
-      color: #fff;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: background 0.18s;
-      box-shadow: 0 2px 10px rgba(60,44,13,0.07);
-      text-decoration: none;
-      display: inline-block;
-    }
-    .hero-btn:hover {
-      background: var(--primary);
-    }
-    .hero-img {
-      flex: 1.1;
-      max-width: 210px;
-      border-radius: 18px;
-      box-shadow: 0 4px 18px rgba(100, 100, 100, 0.09);
-      background: #fcf6f0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px;
-    }
-    .hero-img img {
-      width: 100%;
-      border-radius: 16px;
-      object-fit: cover;
-    }
-    .tags-list {
-      margin: 0 44px 24px 44px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--primary);
-    }
-    .tag {
-      padding: 4px 18px;
-      background: #f1ebe0;
-      border-radius: 18px;
-      box-shadow: 0 1px 5px rgba(60,44,13,0.05);
-      cursor: pointer;
-      transition: background 0.17s;
-      text-decoration: none;
-      color: inherit;
-    }
-    .tag:hover {
-      background: #e6e0d0;
-    }
-    .cards-section {
-      margin: 0 36px;
-      display: flex;
-      gap: 24px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .product-card {
-      background: var(--card-bg);
-      border-radius: 18px;
-      box-shadow: 0 2px 11px rgba(60,44,13,0.07);
-      padding: 22px 22px 28px 22px;
-      width: 270px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 24px;
-      transition: box-shadow 0.16s;
-    }
-    .product-card:hover {
-      box-shadow: 0 6px 20px rgba(60,44,13,0.10);
-    }
-    .product-img {
-      width: 140px;
-      height: 180px;
-      background: #e9e2d3;
-      border-radius: 12px;
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-    .product-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-    .product-title {
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin-bottom: 7px;
-      color: var(--primary);
-      text-align: center;
-      letter-spacing: 1px;
-    }
-    .product-desc {
-      font-size: 1rem;
-      color: #61594c;
-      margin-bottom: 18px;
-      text-align: center;
-      min-height: 48px;
-    }
-    .product-link {
-      background: var(--secondary);
-      color: #fff;
-      font-weight: 600;
-      font-size: 1rem;
-      border: none;
-      border-radius: 7px;
-      padding: 10px 20px;
-      text-decoration: none;
-      transition: background 0.18s;
-      cursor: pointer;
-      margin-top: auto;
-      box-shadow: 0 1px 6px rgba(234,163,122,0.12);
-      display: inline-block;
-    }
-    .product-link:hover {
-      background: #d6895b;
-    }
-    @media (max-width: 900px) {
-      .wrapper { max-width: 98vw; }
-      .hero { flex-direction: column; padding: 32px 20px 20px 20px; margin: 24px 6vw 20px 6vw; }
-      .hero-img { max-width: 90vw; }
-      .cards-section { margin: 0 8px; }
-      nav { padding: 16px 10px 8px 10px; }
-      .tags-list { margin: 0 10px 24px 10px; }
-    }
-  </style>
+  <title>Glossy Glam Vibe</title>
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes:400,700|Montserrat:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="wrapper">
-    <nav>
-      <div class="logo">Just Pretty Girlzz</div>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+  <div class="vibe-bg"></div>
+  <header class="hero">
+    <h1 class="brand-title">Gloss & Glam</h1>
+    <p class="brand-tagline">Unapologetically Bold, Glossy, and Luxe</p>
+  </header>
+  <main>
+    <section class="feature-images">
+      <div class="feature-image-card">
+        <img src="image3.jpg" alt="Glossy Hair Editorial" />
       </div>
-    </nav>
-    <section class="hero">
-      <div class="hero-text">
-        <div class="hero-title">Explore Unique Finds</div>
-        <div class="hero-desc">Curated picks and pretty things for every vibe. Discover handpicked deals, beauty, and lifestyle essentials that brighten your day.</div>
-        <a href="shop.html" class="hero-btn">See All Products</a>
-      </div>
-      <div class="hero-img">
-        <!-- Replace the src with your own image or keep as placeholder -->
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Pretty Products">
+      <div class="feature-image-card">
+        <img src="image4.jpg" alt="Glossy Lips and Nails Editorial" />
       </div>
     </section>
-    <div class="tags-list">
-      <a class="tag" href="trending.html">Trending</a>
-      <a class="tag" href="beauty.html">Beauty</a>
-      <a class="tag" href="style.html">Style</a>
-      <a class="tag" href="selfcare.html">Self-Care</a>
-      <a class="tag" href="gifts.html">Gifts</a>
-      <a class="tag" href="deals.html">Deals</a>
-    </div>
-    <section class="cards-section">
-      <div class="product-card">
-        <div class="product-img">
-          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" alt="Fashion">
-        </div>
-        <div class="product-title">Chic Cosiness</div>
-        <div class="product-desc">Stay comfy and cute with our top picks for cozy style.</div>
-        <a href="trending.html" class="product-link">Shop Now</a>
-      </div>
-      <div class="product-card">
-        <div class="product-img">
-          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Beauty">
-        </div>
-        <div class="product-title">Glow Kit</div>
-        <div class="product-desc">Discover beauty essentials for a radiant everyday look.</div>
-        <a href="beauty.html" class="product-link">Shop Now</a>
-      </div>
-      <div class="product-card">
-        <div class="product-img">
-          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Lifestyle">
-        </div>
-        <div class="product-title">Passion Picks</div>
-        <div class="product-desc">Unique finds that add joy and inspiration to your routine.</div>
-        <a href="deals.html" class="product-link">Shop Now</a>
-      </div>
+    <section class="about">
+      <h2 class="about-title">The Aesthetic</h2>
+      <p>
+        We fuse soft, dreamy gradients, high-gloss shine, and powerful feminine energy. Imagine the luxe of brushed hair, the pop of vinyl lips, the sparkle of chrome nails, and the glow of icons. This is your moodboard—turn up the gloss, turn up the glamour.
+      </p>
     </section>
-  </div>
+    <section class="cta">
+      <a class="cta-btn" href="#">Shop the Look</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Gloss & Glam. All rights reserved.</p>
+  </footer>
 </body>
 </html>
