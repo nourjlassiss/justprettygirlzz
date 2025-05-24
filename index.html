@@ -2,51 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Pretty Essentials Card Grid</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pretty Essentials</title>
+  <!-- Google Fonts for script and sans fonts -->
   <link href="https://fonts.googleapis.com/css?family=Great+Vibes:400,700|Montserrat:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="vibe-bg"></div>
-  <header class="hero">
-    <h1 class="brand-title">Pretty Essentials</h1>
-    <p class="brand-tagline">Luxe, glossy, & unapologetically you.</p>
-  </header>
-  <main>
-    <section class="essentials-list">
-      <div class="essential-card">
-        <span class="essential-icon">💄</span>
-        <h2>Lip Gloss</h2>
-        <p>For that perfect, juicy shine—go bold or nude, but always glossy.</p>
+  <div class="outer-bg">
+    <div class="card-grid">
+      <!-- Card 1 -->
+      <div class="card-row pink-row">
+        <div class="card card-left">
+          <h1 class="card-title">КСЕБЕ<br><span class="script">КНЕЖНО</span></h1>
+          <img class="card-img" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=300&q=80" alt="Product 1">
+          <p class="card-desc">Ваши ежедневные must-have средства для ухода за собой и настроения.</p>
+          <button class="card-btn">КУПИТЬ</button>
+        </div>
+        <div class="card card-right pink">
+          <svg class="bag-svg" viewBox="0 0 110 120">
+            <!-- Bag outline -->
+            <rect x="15" y="25" width="80" height="70" rx="8" fill="none" stroke="#fff" stroke-width="2"/>
+            <!-- Handles -->
+            <path d="M28 25 Q55 3 82 25" fill="none" stroke="#fff" stroke-width="2"/>
+            <!-- Essentials (abstract) -->
+            <rect x="25" y="60" width="10" height="25" rx="2" fill="#fff" opacity="0.7"/>
+            <rect x="40" y="75" width="12" height="15" rx="2" fill="#fff" opacity="0.7"/>
+            <rect x="58" y="70" width="7" height="22" rx="2" fill="#fff" opacity="0.7"/>
+            <rect x="70" y="65" width="20" height="13" rx="2" fill="#fff" opacity="0.7"/>
+            <circle cx="80" cy="95" r="5" fill="#fff" opacity="0.7"/>
+          </svg>
+          <ul class="essentials-list">
+            <li>Лип-глосс</li>
+            <li>Парфюм мини</li>
+            <li>Крем для рук</li>
+            <li>Антибактериальный гель</li>
+          </ul>
+        </div>
       </div>
-      <div class="essential-card">
-        <span class="essential-icon">💅</span>
-        <h2>Press-On Nails</h2>
-        <p>Switch up your style in seconds with high-shine, statement nails.</p>
+      <!-- Card 2 -->
+      <div class="card-row green-row">
+        <div class="card card-left">
+          <h1 class="card-title">КСЕБЕ<br><span class="script">КНЕЖНО</span></h1>
+          <img class="card-img" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=300&q=80" alt="Product 2">
+          <p class="card-desc">Лёгкая забота для любого настроения и каждого дня.</p>
+          <button class="card-btn">КУПИТЬ</button>
+        </div>
+        <div class="card card-right green">
+          <svg class="bag-svg" viewBox="0 0 110 120">
+            <!-- Bag outline -->
+            <rect x="15" y="25" width="80" height="70" rx="8" fill="none" stroke="#fff" stroke-width="2"/>
+            <!-- Handles -->
+            <path d="M28 25 Q55 3 82 25" fill="none" stroke="#fff" stroke-width="2"/>
+            <!-- Essentials (abstract) -->
+            <rect x="25" y="60" width="10" height="25" rx="2" fill="#fff" opacity="0.7"/>
+            <rect x="40" y="75" width="12" height="15" rx="2" fill="#fff" opacity="0.7"/>
+            <rect x="58" y="70" width="7" height="22" rx="2" fill="#fff" opacity="0.7"/>
+            <rect x="70" y="65" width="20" height="13" rx="2" fill="#fff" opacity="0.7"/>
+            <circle cx="80" cy="95" r="5" fill="#fff" opacity="0.7"/>
+          </svg>
+          <ul class="essentials-list">
+            <li>Салфетки</li>
+            <li>Мини-зеркало</li>
+            <li>Блеск для губ</li>
+            <li>Крем для рук</li>
+          </ul>
+        </div>
       </div>
-      <div class="essential-card">
-        <span class="essential-icon">👝</span>
-        <h2>Mini Pouch</h2>
-        <p>Keep your essentials chic and handy—lip balm, mirror, and cash.</p>
+      <!-- Card 3 -->
+      <div class="card-row pink-row">
+        <div class="card card-left">
+          <h1 class="card-title">КСЕБЕ<br><span class="script">КНЕЖНО</span></h1>
+          <img class="card-img" src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=300&q=80" alt="Product 3">
+          <p class="card-desc">Это не просто набор. Это — твой стиль жизни и забота о себе.</p>
+          <button class="card-btn">ЗАКАЗАТЬ</button>
+        </div>
+        <div class="card card-right pink">
+          <svg class="bag-svg" viewBox="0 0 110 120">
+            <!-- Bag outline -->
+            <rect x="15" y="25" width="80" height="70" rx="8" fill="none" stroke="#fff" stroke-width="2"/>
+            <!-- Handles -->
+            <path d="M28 25 Q55 3 82 25" fill="none" stroke="#fff" stroke-width="2"/>
+            <!-- Essentials (abstract) -->
+            <rect x="25" y="60" width="10" height="25" rx="2" fill="#fff" opacity="0.7"/>
+            <rect x="40" y="75" width="12" height="15" rx="2" fill="#fff" opacity="0.7"/>
+            <rect x="58" y="70" width="7" height="22" rx="2" fill="#fff" opacity="0.7"/>
+            <rect x="70" y="65" width="20" height="13" rx="2" fill="#fff" opacity="0.7"/>
+            <circle cx="80" cy="95" r="5" fill="#fff" opacity="0.7"/>
+          </svg>
+          <ul class="essentials-list">
+            <li>Зеркало</li>
+            <li>Косметичка</li>
+            <li>Мини-парфюм</li>
+            <li>Резинка для волос</li>
+          </ul>
+        </div>
       </div>
-      <div class="essential-card">
-        <span class="essential-icon">🕶️</span>
-        <h2>Sunglasses</h2>
-        <p>Serve attitude and mystery. Oversized, tinted, or rhinestone-studded!</p>
-      </div>
-      <div class="essential-card">
-        <span class="essential-icon">✨</span>
-        <h2>Body Shimmer</h2>
-        <p>Glow up with a touch of sparkle—shoulders, collarbone, or wherever you want shine.</p>
-      </div>
-    </section>
-    <section class="cta">
-      <a class="cta-btn" href="#">Get the Look</a>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 Pretty Essentials. All rights reserved.</p>
-  </footer>
+    </div>
+  </div>
 </body>
 </html>
